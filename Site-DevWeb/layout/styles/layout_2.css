@@ -1,0 +1,286 @@
+@charset "utf-8";
+@import url("framework.css");
+
+/* Div topo */
+.wrapper{
+    display:block; position:relative; width:100%; margin:0; padding:0; text-align:left; word-wrap:break-word;
+}
+#header #logo h1 a{
+    color:inherit;
+}
+#header #logo{
+    margin:30px 0 0 0;
+}
+#header #logo h1{
+    margin:0; margin-left: 10px; padding:0; font-size:40px; text-transform:uppercase;
+}
+.hoc{
+    display:block; margin:0 auto;
+}
+.clear, .group{
+    display:block;
+}
+.clear::before, .clear::after, .group::before, .group::after{
+    display:table; content:"";
+}
+.clear, .clear::after, .group, .group::after{
+    clear:both;
+}
+.fl_left, .imgl{
+    float:left;
+}
+.fl_right, .imgr{
+    float:right;
+}
+#mainav, #breadcrumb, .sidebar nav{
+    line-height:normal;
+}
+#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{
+    position:absolute; font-family:"Font Awesome\ 5 Free"; 
+    font-weight:900; font-size:10px; line-height:10px;
+}
+#mainav ul{
+    text-transform:uppercase;
+}
+#mainav ul ul{
+    position:absolute; width:180px; text-transform:none; z-index:9999;
+}
+#mainav ul ul ul{
+    left:180px; top:0;
+}
+#mainav li{
+    display:block; position:relative; float:left; margin:0; padding:0;
+}
+#mainav li:last-child{
+    margin-right:0;
+}
+#mainav li li{
+    width:100%; margin:0;
+}
+#mainav li a{
+    display:block; padding:40px 25px;
+}
+#mainav li li a{
+    border:solid; border-width:0 0 1px 0;
+}
+#mainav .drop{
+    padding-left:30px;
+}
+#mainav li li a, #mainav li li .drop{
+    display:block; margin:0; padding:10px 15px;
+}
+#mainav .drop::after, #mainav li li .drop::after{
+    content:"\f0d7";
+}
+#mainav .drop::after{
+    top:45px; left:20px;
+}
+#mainav li li .drop::after{
+    top:15px; left:5px;
+}
+#mainav ul ul{
+    visibility:hidden; opacity:0;
+}
+#mainav ul li:hover > ul{
+    visibility:visible; opacity:1;
+}
+#mainav form{
+    display:none; width:100%; margin:0; padding:0;
+}
+#mainav form select, #mainav form select option{
+    display:block; cursor:pointer; outline:none;
+}
+#mainav form select{
+    width:100%; padding:5px; border:none;
+}
+#mainav form select option{
+    margin:5px; padding:0; border:none;
+}
+#mainav li a{
+    color:inherit; border-color:transparent;
+}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{
+    color:#FFFFFF; background-color:#38971c;
+}
+#mainav li li a, #mainav .active li a{
+    color:#FFFFFF; background-color:#38971c;
+    border-color:#63d640;
+}
+#mainav li li:hover > a, #mainav .active .active > a{
+    color:#FFFFFF; background-color:#38971c; 
+    border-color:#90f771;
+}
+#mainav form select{
+    color:#474747; background-color:#FFFFFF;
+}
+/*Background central .gif*/
+.bgded{
+    background-position:top center; background-repeat:no-repeat; background-size:cover;
+}
+.overlay{
+    position:relative; z-index:1;
+}
+.overlay::after{
+    display:block; position:absolute; top:0; left:0; 
+    width:100%; height:100%; content:""; z-index:-1;
+}
+#pageintro{padding:200px 0 300px;}/* 300px => 100px for #introblocks negative margin */
+
+#pageintro article, #pageintro article p{
+    display:block; max-width:75%; margin:0 auto; text-align:center;
+}
+#pageintro article p{
+    max-width:65%; line-height:2rem;
+}
+#pageintro .heading{
+    margin-bottom:20px; font-size:4rem;
+}
+#pageintro footer{
+    margin-top:50px;
+}
+#pageintro{
+    color:#FFFFFF;
+}
+h1, h2, h3, h4, h5, h6, .heading{
+    margin:0 0 20px 0; font-size:1.4rem; line-height:normal; 
+    font-weight:normal; text-transform:uppercase;
+}
+.heading.nospace{
+    margin-bottom:0;
+}
+.heading.underline{
+    display:inline-block; position:relative; padding:0 0 15px 0;
+}
+.heading.underline::after{
+    display:block; position:absolute; bottom:0; width:25%; 
+    height:5px; border-radius:3px; content:"";
+}
+.center .heading.underline::after{
+    left:50%; margin-left:-12%;
+}
+.heading.underline::after{
+    background-color:#38971c;
+}
+.font-xs{
+    font-size:1rem;
+}
+.font-x2{
+    font-size:2.2rem;
+}
+.font-x3{
+    font-size:3.2rem;
+}
+ 
+#latest article figure{
+    margin-bottom:30px;
+}
+#latest article .excerpt .heading{
+    margin:0 0 15px 0; font-size:1.2rem;
+}
+#latest article .excerpt .meta li{
+    display:inline-block; margin:0 3px 0 0; padding:0; font-size:.8rem;
+}
+#latest article .excerpt .meta li:last-child{
+    margin:0;
+}
+#latest article .excerpt .meta li::after{
+    margin-left:8px; content:"|";
+}
+#latest article .excerpt .meta li:last-child::after{
+    margin:0; content:"";
+}
+#latest article .excerpt footer{
+    margin-top:30px;
+}
+
+.nospace{
+    margin:0; padding:0; list-style:none;
+}
+
+.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{
+    display:inline-block; margin:0 10% 0 2.21052%; list-style:none;
+}
+.one_third{
+    width:20.52631%;
+}
+
+#copyright{
+    padding:20px 0;
+}
+#copyright *{
+    margin:0; padding:0;
+}
+#backtotop{
+    z-index:999; display:inline-block; position:fixed; visibility:hidden; bottom:20px; 
+    right:20px; width:36px; height:36px; line-height:36px; font-size:16px; text-align:center; opacity:.2;
+}
+#backtotop i{
+    display:block; width:100%; height:100%; line-height:inherit;
+}
+#backtotop.visible{
+    visibility:visible; opacity:.5;
+}
+#backtotop:hover{
+    opacity:1;
+}
+#backtotop{
+    color:#FFFFFF; background-color:#38971c;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+  }
+
+body{
+    width: auto;
+}
+/* Rows */
+
+.row0, .row0 a{
+    color:#474747; background-color:#F4F4F4;
+}
+.row1, .row1 a{
+    color:#FFFFFF; background-color:#38971c;
+}
+.row2, .row2 a{
+    color:#474747; background-color:#F4F4F4;
+}
+.row3, .row3 a{
+    color:#474747; background-color:#FFFFFF;
+}
+.row4, .row4 a{
+    color:#A5A6AA; background-color:#27282E;
+}
+.row5, .row5 a{
+    color:#A5A6AA; background-color:#1C1D21;
+}
+
+/* Keyframe inicio */
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    to{
+        width: 41em;
+    }
+}
+
+@keyframes blinkCursor {
+    from{
+        border-right-color: rgba(255,255,255,.7);
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+.typing-animation {
+    animation: typing 6s steps(60) infinite normal both, blinkCursor 500ms infinite normal;
+}
+
+.line{
+    border-right: 2px solid rgba(255,255,255,.7) ;
+    white-space: nowrap;
+    overflow: hidden;
+}
