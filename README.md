@@ -18,4 +18,4 @@ Nos inspiramos em sites de blogs sobre linux e linguagens de programação
 
 Funcionalidades:
 
-Nosso site tem um menu com dropdown de 2 niveis, um gif no centro da tela, colocamos uma animação no texto, coloca
+Nosso site tem um menu com dropdown de 2 niveis, um gif no centro da tela, colocamos uma animação no texto, colocamos a foto da equipe no index.html, colocamos um rodape simples de copyrigth
